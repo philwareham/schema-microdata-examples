@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Microdata example - blog article</title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+<!-- Accessibility levels -->
+  <meta itemprop="accessibilityControl" content="fullKeyboardControl">
+  <meta itemprop="accessibilityControl" content="fullMouseControl">
+  <meta itemprop="accessibilityHazard" content="noFlashing">
+  <meta itemprop="accessibilityHazard" content="noMotionSimulation">
+  <meta itemprop="accessibilityHazard" content="noSound">
+  <meta itemprop="accessibilityAPI" content="ARIA">
+
+<!-- Header -->
+  <header itemscope itemtype="http://schema.org/ProfessionalService">
+    <h2 itemprop="name legalName">
+      <a rel="home" itemprop="url" href="#">ExampleCorp Ltd</a>
+    </h2>
+    <meta itemprop="logo" content="http://example.com/img/company-logo.svg">
+    <ul>
+      <li>
+        <a rel="external" itemprop="url" href="#">Follow us on Facebook</a>
+      </li>
+      <li>
+        <a rel="external" itemprop="url" href="#">Follow us on Google+</a>
+      </li>
+      <li>
+        <a rel="external" itemprop="url" href="#">Follow us on Twitter</a>
+      </li>
+    </ul>
+    <p itemprop="telephone">+44 (0)0000 000000</p>
+  </header>
+
+<!-- Navigation -->
+  <nav aria-label="Navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+    <ul>
+      <li>
+        <a itemprop="url" href="#">Products</a>
+      </li>
+      <li>
+        <a itemprop="url" href="#">Services</a>
+      </li>
+      <li>
+        <a itemprop="url" href="#">About</a>
+      </li>
+      <li>
+        <a itemprop="url" href="#">Contact</a>
+      </li>
+    </ul>
+  </nav>
+
+<!-- Content -->
+  <main aria-label="Main content" itemscope itemtype="http://schema.org/Blog">
+
+    <article itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+
+      <h1 itemprop="name headline">Weedol product rebranding</h1>
+
+      <p>
+        <time datetime="2015-03-26T10:43:39Z" itemprop="datePublished">26 Mar 2015</time>
+      </p>
+
+      <figure itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+        <img itemprop="contentUrl" alt="Alt text" src="http://example.com/img/example1.jpg">
+        <figcaption itemprop="caption">An example image caption.</figcaption>
+      </figure>
+
+      <div itemprop="description">
+        <p><strong>Ex graeci civibus eleifend vim, mel et utroque fastidii.</strong></p>
+      </div>
+
+      <div itemprop="articleBody">
+        <p>Lorem ipsum dolor sit amet, quo epicuri volutpat no. Causae option accusamus in est.</p>
+        <p itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+          <img itemprop="contentUrl" alt="Alt text" src="http://example.com/img/example2.jpg">
+        </p>
+        <h3>Ne sea soluta voluptatum</h3>
+        <p>Timeam mentitum an nam. Mei ne prima perfecto adversarium.</p>
+        <p itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+          <img itemprop="contentUrl" alt="Alt text" src="http://example.com/img/example3.jpg">
+        </p>
+        <p>Inermis indoctum vis in, has soleat complectitur te.</p>
+      </div>
+
+      <footer>
+        By:
+        <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <a rel="author" itemprop="url" href="#" title="View author biography">
+            <span itemprop="name">Aaron A. Aardvark</span>
+          </a>
+          <meta itemprop="jobTitle" content="Director">
+          <meta itemprop="worksFor" content="ExampleCorp Ltd">
+        </span>
+        <span role="separator">|</span>
+        Tags:
+        <span itemprop="keywords">
+          <a rel="category tag" href="#" title="View articles in this category">Curly Wurly</a>
+          <a rel="category tag" href="#" title="View articles in this category">Hula Hoops</a>
+        </span>
+        <span role="separator">|</span>
+        Comments:
+        <a href="#" title="View article comments" itemprop="discussionUrl">3</a>
+        <meta itemprop="interactionCount" content="UserComments:3">
+      </footer>
+
+      <section>
+        <h3>Comments</h3>
+        <ol>
+          <li>
+            <article itemscope itemtype="http://schema.org/Comment">
+              <h4 itemprop="author" itemscope itemtype="http://schema.org/Person">
+                <span itemprop="name">Joe Q. Public</span>
+              </h4>
+              <p>
+                <time datetime="2015-01-26T16:55:03Z" itemprop="dateCreated">26/03/15 16:55</time>
+              </p>
+              <div itemprop="text">
+                <p>Inermis indoctum vis in, has soleat complectitur te.</p>
+              </div>
+            </article>
+          </li>
+        </ol>
+      </section>
+
+    </article>
+
+  </main>
+
+<!-- Secondary Content -->
+  <aside>
+
+    <section itemscope itemtype="http://schema.org/WebSite">
+      <h3>Search</h3>
+      <meta itemprop="url" content="http://example.com/">
+      <form itemprop="potentialAction" itemscope itemtype="http://schema.org/SearchAction">
+        <meta itemprop="target" content="http://example.com/?q={q}">
+        <input name="q" type="search" itemprop="query-input">
+        <button>Go</button>
+      </form>
+    </section>
+
+    <section>
+      <h3>Latest blog articles</h3>
+      <ol>
+        <li>
+          <article itemscope itemtype="http://schema.org/BlogPosting">
+            <h4 itemprop="name headline">
+              <a itemprop="url" href="#">Blog example title 1</a>
+            </h4>
+          </article>
+        </li>
+      </ul>
+    </section>
+
+  </aside>
+
+<!-- Footer -->
+  <footer role="contentinfo">
+    <small>
+      ©2015
+      <span itemscope itemtype="http://schema.org/PostalAddress">
+        <span itemprop="name">ExampleCorp Ltd</span>.
+          Registered in England and Wales no. 0000000.<br>
+          Registered Office:
+          <span itemprop="streetAddress">Anon Towers, 88 Example Road</span>,
+          <span itemprop="addressLocality">Exampleton</span>,
+          <span itemprop="addressRegion">Exampleshire</span>
+          <span itemprop="postalCode">AZ0 0AZ</span>.
+      </span>
+    </small>
+  </footer>
+
+</body>
+</html>
