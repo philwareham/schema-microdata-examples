@@ -1,3 +1,3 @@
 # Schema.org microdata examples
 
-Some examples of HTML markup using Schema.org microdata, to complement [this article](http://www.designhive.com/blog/using-schemaorg-microdata).
+Some examples of HTML structured data markup using Schema.org microdata, see [blog.html](https://github.com/philwareham/schema-microdata-examples/blob/master/blog.html).
