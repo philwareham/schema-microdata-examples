@@ -26,7 +26,7 @@
         <a rel="external" itemprop="sameAs" href="#">Follow us on Facebook</a>
       </li>
       <li>
-        <a rel="external" itemprop="sameAs" href="#">Follow us on Google+</a>
+        <a rel="external" itemprop="sameAs" href="#">Follow us on LinkedIn</a>
       </li>
       <li>
         <a rel="external" itemprop="sameAs" href="#">Follow us on Twitter</a>
@@ -85,7 +85,7 @@
       </p>
 
       <figure itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
-        <img itemprop="url" alt="Alt text" src="https://example.com/img/example1.jpg">
+        <img itemprop="url contentUrl" alt="Alt text" src="https://example.com/img/example1.jpg">
         <meta itemprop="width" content="640">
         <meta itemprop="height" content="480">
         <figcaption itemprop="caption">An example image caption.</figcaption>
@@ -98,18 +98,43 @@
       <div itemprop="articleBody">
         <p>Lorem ipsum dolor sit amet, quo epicuri volutpat no. Causae option accusamus in est.</p>
         <p itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
-          <img itemprop="url" alt="Alt text" src="https://example.com/img/example2.jpg">
+          <img itemprop="url contentUrl" alt="Alt text" src="https://example.com/img/example2.jpg">
           <meta itemprop="width" content="640">
           <meta itemprop="height" content="360">
         </p>
         <h3>Ne sea soluta voluptatum</h3>
         <p>Timeam mentitum an nam. Mei ne prima perfecto adversarium.</p>
         <p itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
-          <img itemprop="url" alt="Alt text" src="https://example.com/img/example3.jpg">
+          <img itemprop="url contentUrl" alt="Alt text" src="https://example.com/img/example3.jpg">
           <meta itemprop="width" content="640">
           <meta itemprop="height" content="240">
         </p>
         <p>Inermis indoctum vis in, has soleat complectitur te.</p>
+        <div itemprop="video" itemscope itemtype="https://schema.org/VideoObject">
+          <video controls poster="https://hive-framework.philwareham.co.uk/video/big_buck_bunny.jpg">
+            <source itemprop="contentUrl" type="video/mp4" src="https://hive-framework.philwareham.co.uk/video/big_buck_bunny.mp4">
+            <source itemprop="contentUrl" type="video/webm" src="https://hive-framework.philwareham.co.uk/video/big_buck_bunny.webm">
+            I’m sorry, your browser doesn’t support HTML5 video in MP4 with H.264 or WebM with VP8/VP9.
+          </video>
+          <p><small>Video copyright 2008, Blender Foundation / www.bigbuckbunny.org.</small></p>
+          <meta itemprop="name" content="Video example">
+          <meta itemprop="description" content="An example HTML5 video file.">
+          <meta itemprop="duration" content="T60S">
+          <meta itemprop="uploadDate" content="2018-09-21T10:44:26Z">
+          <meta itemprop="thumbnailUrl" content="https://hive-framework.philwareham.co.uk/video/big_buck_bunny.jpg">
+        </div>
+        <div itemprop="audio" itemscope itemtype="https://schema.org/AudioObject">
+          <audio controls>
+            <source itemprop="contentUrl" type="audio/mp3" src="https://hive-framework.philwareham.co.uk/audio/moonlight_reprise.mp3">
+            <source itemprop="contentUrl" type="audio/ogg; codecs=vorbis" src="https://hive-framework.philwareham.co.uk/audio/moonlight_reprise.ogg">
+            I’m sorry, your browser doesn’t support HTML5 audio.
+          </audio>
+          <meta itemprop="name" content="Audio example">
+          <meta itemprop="description" content="An example HTML5 audio file.">
+          <meta itemprop="duration" content="T181S">
+          <meta itemprop="uploadDate" content="2018-09-21T10:48:03Z">
+          <p><small>“Moonlight Reprise” from “Irsen’s Tale” by Kai Engel. License: <a rel="external" href="https://creativecommons.org/licenses/by-nc/3.0/">Attribution-NonCommercial 3.0 International License</a>.</small></p>
+        </div>
       </div>
 
       <footer>
